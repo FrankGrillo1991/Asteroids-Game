@@ -41,3 +41,11 @@ const player = {
         if (this.y < 0) this.y = canvas.height;
     }
 };
+
+// Handle keyboard input
+const keys = {
+    left: false,
+    right: false,
+    up: false
+};
+
