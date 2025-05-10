@@ -49,3 +49,15 @@ const keys = {
     up: false
 };
 
+document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") keys.left = true;
+    if (e.key === "ArrowLeft") keys.right = true;
+    if (e.key === "ArrowUp") keys.up = true;
+});
+
+document.addEventListener("keyup", () => {
+    if (e.key === "ArrowLeft") keys.left = false;
+    if (e.key === "ArrowRight") keys.right = false;
+    if (e.key === "ArrowUp") keys.up = false;
+});
+
