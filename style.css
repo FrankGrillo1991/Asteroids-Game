@@ -16,3 +16,8 @@ body {
     position: relative;
 }
 
+canvas {
+    background-color: black;
+    border: 1px solid white;
+}
+
