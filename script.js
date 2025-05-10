@@ -76,3 +76,11 @@ function update() {
 
     player.update();
 }
+
+// Draw everything
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    player.draw();
+}
+
+// Main game loop
