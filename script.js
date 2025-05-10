@@ -71,7 +71,7 @@ function update() {
         player.dy = Math.sin(player.angle) * player.moveSpeed;
     } else {
         player.dx = 0;
-        player.dy = 0
+        player.dy = 0;
     }
 
     player.update();
