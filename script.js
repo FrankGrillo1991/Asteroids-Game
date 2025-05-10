@@ -51,7 +51,7 @@ const keys = {
 
 document.addEventListener("keydown", (e) => {
     if (e.key === "ArrowLeft") keys.left = true;
-    if (e.key === "ArrowLeft") keys.right = true;
+    if (e.key === "ArrowRight") keys.right = true;
     if (e.key === "ArrowUp") keys.up = true;
 });
 
