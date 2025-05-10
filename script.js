@@ -84,3 +84,10 @@ function draw() {
 }
 
 // Main game loop
+function gameLoop() {
+    update();
+    draw();
+    requestAnimationFrame(gameLoop);
+}
+
+gameLoop();
