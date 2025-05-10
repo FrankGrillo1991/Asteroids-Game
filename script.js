@@ -61,3 +61,18 @@ document.addEventListener("keyup", () => {
     if (e.key === "ArrowUp") keys.up = false;
 });
 
+// Update player position based on input
+function update() {
+    if (keys.left) player.angle -= player.rotateSpeed;
+    if (keys.right) player.angle += player.rotateSpeed;
+
+    if (keys.up) {
+        player.dx = Math.cos(player.angle) * player.moveSpeed;
+        player.dy = Math.sin(player.angle) * player.moveSpeed;
+    } else {
+        player.dx = 0;
+        player.dy = 0
+    }
+
+    player.update();
+}
